@@ -1,0 +1,18 @@
+.header {
+  height: 830px;
+}
+
+.header__bg-gradient {
+  position: absolute;
+  height: 1198px;
+  width: 100%;
+  background-image: url('./../assets/img/backgrounds/header-gradient.png');
+
+  .header__bg-cover {
+    background-image: url('./../assets/img/backgrounds/bg-header-bats.svg');
+    position: absolute;
+    height: 1084px;
+    width: 100%;
+    top: 546px;
+  }
+}
