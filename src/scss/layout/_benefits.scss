@@ -2,3 +2,31 @@
   height: 368px;
   box-sizing: border-box;
 }
+
+.benefits__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+
+  .benefits__item {
+    flex: 1;
+    margin-top: 60px;
+  }
+
+  .benefits__item-name {
+    margin-top: 30px;
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .benefits__item-description {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+  }
+}
