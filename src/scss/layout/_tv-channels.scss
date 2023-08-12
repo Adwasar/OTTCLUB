@@ -1,0 +1,21 @@
+.tv-channels {
+  position: relative;
+  height: 901px;
+  box-sizing: border-box;
+
+  .tv-channels__bg-gradient {
+    position: absolute;
+    top: -404px;
+    height: 1584px;
+    width: 100%;
+    background: url('./../assets/img/backgrounds/tv-channels-gradient.png');
+
+    .tv-channels__cover {
+      position: absolute;
+      bottom: 19px;
+      height: 1220px;
+      width: 654px;
+      background: url('./../assets/img/backgrounds/bg-web.svg');
+    }
+  }
+}
