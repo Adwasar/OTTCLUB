@@ -11,6 +11,7 @@
     background: url('./../assets/img/backgrounds/tv-channels-gradient.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
+    z-index: -1;
 
     .tv-channels__bg-cover {
       position: absolute;
