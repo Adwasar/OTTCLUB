@@ -1,14 +1,62 @@
 .header {
   position: relative;
   height: 830px;
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 156px;
+
+    .header__logo {
+      position: relative;
+      top: -5px;
+      cursor: pointer;
+    }
+
+    .header__nav-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .header__nav-tg {
+        margin-left: 16px;
+      }
+
+      .header__nav-registration {
+        margin-left: 48px;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+      }
+
+      .header__enter-btn {
+        margin-left: 32px;
+        padding: 16px 32px;
+        background-color: transparent;
+        color: #fff;
+        justify-content: center;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 140%;
+      }
+    }
+  }
 }
 
 .header__bg-gradient {
   position: absolute;
+  top: 0;
   height: 1198px;
   width: 100%;
   background-image: url('./../assets/img/backgrounds/header-gradient.png');
   background-repeat: no-repeat;
+  z-index: -1;
 
   .header__bg-cover {
     background-image: url('./../assets/img/backgrounds/bg-bats.svg');
