@@ -1,11 +1,19 @@
 .footer {
   position: relative;
   height: 564px;
+
+  @media (max-width: 1540px) {
+    height: auto;
+  }
 }
 
 .footer__container {
   padding-top: 88px;
   border-top: 2px solid rgba($color: #fff, $alpha: 0.1);
+
+  @media (max-width: 1540px) {
+    padding-top: 65px;
+  }
 }
 
 .footer__wrapper {
@@ -16,22 +24,44 @@
   font-weight: 400;
   line-height: 140%;
 
+  @media (max-width: 1540px) {
+    font-size: 14px;
+  }
+
   .footer__nav {
     display: flex;
     justify-content: space-between;
     width: 574px;
+
+    @media (max-width: 1540px) {
+      width: 467px;
+    }
   }
 
   .footer__contacts {
+    @media (max-width: 1540px) {
+      position: relative;
+      margin-right: 13px;
+    }
+
     .footer__contacts-title {
       margin: 0 0 20px;
       font-size: 20px;
       font-weight: 600;
       line-height: 140%;
+
+      @media (max-width: 1540px) {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
     }
 
     .footer__contacts-chat {
       margin-top: 48px;
+
+      @media (max-width: 1540px) {
+        margin-top: 32px;
+      }
 
       span {
         opacity: 0.8;
@@ -41,6 +71,17 @@
         margin-top: 20px;
         display: flex;
         gap: 24px;
+
+        @media (max-width: 1540px) {
+          margin-top: 10px;
+          gap: 15px;
+        }
+
+        img {
+          @media (max-width: 1540px) {
+            width: 32px;
+          }
+        }
       }
     }
   }
@@ -50,6 +91,11 @@
   margin-top: 50px;
   display: flex;
   gap: 20px;
+
+  @media (max-width: 1540px) {
+    gap: 16px;
+    height: 32px;
+  }
 }
 
 .footer__develop-info {
@@ -63,9 +109,19 @@
   line-height: 140%;
   opacity: 0.8;
 
+  @media (max-width: 1540px) {
+    font-size: 11px;
+    margin: 20px 0 20px auto;
+    opacity: 0.8;
+  }
+
   .footer__c-icon {
     position: relative;
     left: 6px;
+
+    @media (max-width: 1540px) {
+      width: 12px;
+    }
   }
 }
 
@@ -73,10 +129,18 @@
 .footer__contact-item {
   margin-bottom: 10px;
   opacity: 0.8;
+
+  @media (max-width: 1540px) {
+    margin-bottom: 8px;
+  }
 }
 
 .footer__nav-item {
   width: 217px;
+
+  @media (max-width: 1540px) {
+    width: 200px;
+  }
 }
 
 .footer__bg-gradient {
@@ -95,6 +159,8 @@
     height: 665px;
     width: 100%;
     background-image: url('./../assets/img/backgrounds/footer-pumpkins.svg');
+    background-size: contain;
+    background-position: bottom;
     background-repeat: no-repeat;
   }
 }
