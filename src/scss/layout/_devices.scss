@@ -1,5 +1,10 @@
 .devices {
   height: 806px;
+  padding-top: 156px;
+
+  @media (max-width: 1540px) {
+    height: 0px;
+  }
 }
 
 .devices__wrapper {

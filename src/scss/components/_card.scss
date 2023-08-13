@@ -13,7 +13,9 @@
   }
 
   img {
-    width: 132px;
+    @media (max-width: 1540px) {
+      width: 132px;
+    }
   }
 }
 

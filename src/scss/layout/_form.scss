@@ -3,7 +3,7 @@
 }
 
 .form__frame {
-  margin: 60px auto 0;
+  margin: 100px auto 0;
   padding: 150px 195px;
   position: relative;
   box-sizing: border-box;
@@ -40,7 +40,11 @@
     }
 
     .form__price-month {
-      font-size: 16px;
+      font-size: 20px;
+
+      @media (max-width: 1540px) {
+        font-size: 16px;
+      }
     }
 
     .form__price-unit {
