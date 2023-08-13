@@ -11,4 +11,8 @@
 ._container {
   margin: 0 auto;
   width: 1462px;
+
+  @media (max-width: 1540px) {
+    width: 1096px;
+  }
 }
