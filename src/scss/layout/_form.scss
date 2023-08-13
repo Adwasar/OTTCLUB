@@ -1,15 +1,13 @@
 .form {
-  height: 770px;
   box-sizing: border-box;
 }
 
 .form__frame {
-  margin: 60px auto;
+  margin: 60px auto 0;
   padding: 150px 195px;
   position: relative;
   box-sizing: border-box;
   width: 1150px;
-  height: 630px;
   background-image: url('./../assets/icons/form/eye-frame.svg');
   background-size: contain;
   background-repeat: no-repeat;

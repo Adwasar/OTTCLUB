@@ -1,6 +1,5 @@
 .tv-channels {
   position: relative;
-  height: 901px;
   box-sizing: border-box;
 }
 
@@ -12,6 +11,12 @@
   font-weight: 500;
   line-height: 140%;
   opacity: 0.9;
+
+  @media (max-width: 1540px) {
+    margin-top: 68px;
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
 }
 
 .tv-channels__title::after {
@@ -19,6 +24,12 @@
   position: relative;
   left: 17px;
   top: -27px;
+
+  @media (max-width: 1540px) {
+    content: url('./../assets/icons/tv-channels/lightning-1440.svg');
+    left: 6px;
+    top: -10px;
+  }
 }
 
 .tv-channels__description {
@@ -27,6 +38,11 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
+
+  @media (max-width: 1540px) {
+    width: 596px;
+    font-size: 16px;
+  }
 }
 
 .tv-channels__categories-list {
@@ -34,6 +50,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: 51px;
+
+  @media (max-width: 1540px) {
+    margin-top: 32px;
+  }
 
   .tv-channels__category {
     display: flex;
@@ -45,6 +65,11 @@
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
+
+    @media (max-width: 1540px) {
+      padding: 13px 16px;
+      font-size: 16px;
+    }
   }
 
   .tv-channels__category_active {
@@ -58,6 +83,11 @@
   gap: 48px 66px;
   grid-template-columns: repeat(5, 1fr);
   margin-top: 50px;
+
+  @media (max-width: 1540px) {
+    margin-top: 40px;
+    gap: 32px 48px;
+  }
 }
 
 .tv-channels__show-all {
@@ -67,6 +97,11 @@
   font-weight: 500;
   line-height: 140%;
   cursor: pointer;
+
+  @media (max-width: 1540px) {
+    margin: 2px -38px 0 auto;
+    font-size: 14px;
+  }
 
   img {
     position: relative;

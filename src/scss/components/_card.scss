@@ -7,6 +7,14 @@
   border-radius: 10px;
   border: 1px solid #c6c6c8;
   cursor: pointer;
+
+  @media (max-width: 1540px) {
+    padding: 23px;
+  }
+
+  img {
+    width: 132px;
+  }
 }
 
 .card_red {
