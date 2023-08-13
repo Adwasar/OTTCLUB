@@ -2,23 +2,94 @@
   position: relative;
   height: 901px;
   box-sizing: border-box;
+}
 
-  .tv-channels__bg-gradient {
+.tv-channels__title {
+  margin-top: 11px;
+  margin-bottom: 19px;
+  color: #fff;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 140%;
+  opacity: 0.9;
+}
+
+.tv-channels__title::after {
+  content: url('./../assets/icons/tv-channels/lightning.svg');
+  position: relative;
+  left: 17px;
+  top: -27px;
+}
+
+.tv-channels__description {
+  margin: 0;
+  width: 840px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.tv-channels__categories-list {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 51px;
+
+  .tv-channels__category {
+    display: flex;
+    padding: 17px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .tv-channels__category_active {
+    border: 2px solid #fc3232;
+    background: #fc3232;
+  }
+}
+
+.tv-channels__channels {
+  display: grid;
+  gap: 48px 66px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 50px;
+}
+
+.tv-channels__show-all {
+  margin: 7px 0 0 auto;
+  width: 175px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+
+  img {
+    position: relative;
+    top: 10px;
+    margin-left: -1px;
+  }
+}
+
+.tv-channels__bg-gradient {
+  position: absolute;
+  top: -404px;
+  height: 1584px;
+  width: 100%;
+  background: url('./../assets/img/backgrounds/tv-channels-gradient.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  .tv-channels__bg-cover {
     position: absolute;
-    top: -404px;
-    height: 1584px;
-    width: 100%;
-    background: url('./../assets/img/backgrounds/tv-channels-gradient.png');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    z-index: -1;
-
-    .tv-channels__bg-cover {
-      position: absolute;
-      bottom: 19px;
-      height: 1220px;
-      width: 654px;
-      background: url('./../assets/img/backgrounds/bg-web.svg');
-    }
+    bottom: 19px;
+    height: 1220px;
+    width: 654px;
+    background: url('./../assets/img/backgrounds/bg-web.svg');
   }
 }

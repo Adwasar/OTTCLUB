@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  padding: 32px 31px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #c6c6c8;
+  cursor: pointer;
+}
+
+.card_red {
+  background: var(--gradient-a-red, linear-gradient(180deg, #ff6961 0%, #d70015 100%));
+}
+
+.card_blue {
+  background: var(--gradient-f-dark-blue, linear-gradient(180deg, #409cff 0%, #0040dd 100%));
+}
+
+.card_green {
+  background: var(--gradient-d-green, linear-gradient(180deg, #30db5b 0%, #248a3d 100%));
+}
+
+.card_violet {
+  background: var(--gradient-g-violet, linear-gradient(180deg, #7d7aff 0%, #3634a3 100%));
+}
+
+.card_yellow {
+  background: var(--gradient-c-yellow, linear-gradient(180deg, #ffd426 0%, #b25000 100%));
+}
