@@ -1,3 +1,40 @@
 .devices {
   height: 806px;
 }
+
+.devices__wrapper {
+  display: flex;
+
+  .devices__title {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 715px;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 140%;
+    opacity: 0.9;
+  }
+
+  .devices__text {
+    margin-top: 30px;
+    width: 715px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+  }
+
+  .devices__img {
+    margin: -7px 0 0 28px;
+  }
+
+  .devices__red-btn {
+    margin-top: 40px;
+  }
+}
+
+.devices__operation-systems {
+  margin-top: 101px;
+  display: flex;
+  justify-content: space-between;
+}
