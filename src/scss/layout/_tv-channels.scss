@@ -2,6 +2,10 @@
   padding-top: 88px;
   position: relative;
   box-sizing: border-box;
+
+  @media (max-width: 1540px) {
+    padding-top: 0;
+  }
 }
 
 .tv-channels__title {
@@ -116,8 +120,8 @@
   top: -404px;
   height: 1584px;
   width: 100%;
-  background: url('./../assets/img/backgrounds/tv-channels-gradient.png');
-  background-size: auto 100%;
+  background-image: url('./../assets/img/backgrounds/tv-channels-gradient.png');
+  background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
 
@@ -126,6 +130,11 @@
     bottom: 19px;
     height: 1220px;
     width: 654px;
-    background: url('./../assets/img/backgrounds/bg-web.svg');
+    background-image: url('./../assets/img/backgrounds/bg-web.svg');
+    background-repeat: no-repeat;
+
+    @media (max-width: 1540px) {
+      background-image: url('./../assets/img/backgrounds/web-1440.svg');
+    }
   }
 }
