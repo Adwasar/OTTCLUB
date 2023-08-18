@@ -8,6 +8,46 @@
   }
 }
 
+.tv-channels::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -335px;
+  width: 100%;
+  height: 1564px;
+  background-image: url('./../assets/img/backgrounds/web-1440.svg'),
+    url('./../assets/img/backgrounds/tv-channels-gradient.png');
+  background-position: left bottom 20px, left center;
+  background-size: 35%, contain;
+  background-repeat: no-repeat, no-repeat;
+  z-index: -1;
+
+  @media (max-width: 1540px) {
+    height: 1188px;
+  }
+
+  @media (max-width: 1040px) {
+    top: -235px;
+    height: 1000px;
+  }
+
+  @media (max-width: 818px) {
+    top: -185px;
+    height: 800px;
+    background-size: 50%, cover;
+  }
+
+  @media (max-width: 750px) {
+    top: -135px;
+    height: 700px;
+  }
+
+  @media (max-width: 360px) {
+    top: -70px;
+    height: 500px;
+  }
+}
+
 .tv-channels__title {
   margin-top: 11px;
   margin-bottom: 19px;
@@ -115,26 +155,26 @@
   }
 }
 
-.tv-channels__bg-gradient {
-  position: absolute;
-  top: -404px;
-  height: 1584px;
-  width: 100%;
-  background-image: url('./../assets/img/backgrounds/tv-channels-gradient.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: -1;
+// .tv-channels__bg-gradient {
+//   position: absolute;
+//   top: -404px;
+//   height: 1584px;
+//   width: 100%;
+//   background-image: url('./../assets/img/backgrounds/tv-channels-gradient.png');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   z-index: -1;
 
-  .tv-channels__bg-cover {
-    position: absolute;
-    bottom: 19px;
-    height: 1220px;
-    width: 654px;
-    background-image: url('./../assets/img/backgrounds/bg-web.svg');
-    background-repeat: no-repeat;
+//   .tv-channels__bg-cover {
+//     position: absolute;
+//     bottom: 19px;
+//     height: 1220px;
+//     width: 654px;
+//     background-image: url('./../assets/img/backgrounds/bg-web.svg');
+//     background-repeat: no-repeat;
 
-    @media (max-width: 1540px) {
-      background-image: url('./../assets/img/backgrounds/web-1440.svg');
-    }
-  }
-}
+//     @media (max-width: 1540px) {
+//       background-image: url('./../assets/img/backgrounds/web-1440.svg');
+//     }
+//   }
+// }
