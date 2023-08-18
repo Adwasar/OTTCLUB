@@ -2,6 +2,46 @@
   position: relative;
 }
 
+.header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1317px;
+  width: 100%;
+  background-image: url('./../assets/img/backgrounds/bg-bats.svg'),
+    url('./../assets/img/backgrounds/header-gradient.png');
+  background-position: center bottom, center;
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+  z-index: -1;
+
+  @media (max-width: 1540px) {
+    height: 994px;
+  }
+
+  @media (max-width: 1040px) {
+    height: 867px;
+    background-size: auto 70%, cover;
+  }
+
+  @media (max-width: 818px) {
+    height: 698px;
+  }
+
+  @media (max-width: 818px) {
+    height: 698px;
+  }
+
+  @media (max-width: 750px) {
+    height: 634px;
+  }
+
+  @media (max-width: 360px) {
+    height: 552px;
+  }
+}
+
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -114,26 +154,5 @@
       margin-left: -173px;
       width: 740px;
     }
-  }
-}
-
-.header__bg-gradient {
-  position: absolute;
-  top: 0;
-  height: 1198px;
-  width: 100%;
-  background-image: url('./../assets/img/backgrounds/header-gradient.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: -1;
-
-  .header__bg-cover {
-    position: absolute;
-    background-image: url('./../assets/img/backgrounds/bg-bats.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 1084px;
-    width: 100%;
-    top: 546px;
   }
 }
