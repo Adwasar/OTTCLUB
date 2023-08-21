@@ -4,6 +4,7 @@
 }
 
 ._global-container {
+  box-sizing: border-box;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -14,5 +15,19 @@
 
   @media (max-width: 1540px) {
     width: 1096px;
+  }
+
+  @media (max-width: 1140px) {
+    width: 896px;
+  }
+
+  @media (max-width: 930px) {
+    width: 690px;
+  }
+
+  @media (max-width: 730px) {
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 0 16px;
   }
 }
