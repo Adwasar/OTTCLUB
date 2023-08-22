@@ -1,28 +1,29 @@
 .form {
+  padding-top: 20px;
   box-sizing: border-box;
-}
 
-.form__frame {
-  margin: 100px auto 0;
-  padding: 150px 195px;
-  position: relative;
-  box-sizing: border-box;
-  width: 1150px;
-  background-image: url('./../assets/icons/form/eye-frame.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+  &__frame {
+    margin: 100px auto 0;
+    padding: 150px 195px;
+    position: relative;
+    box-sizing: border-box;
+    width: 1150px;
+    background-image: url('./../assets/img/eye-frame.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 
-  @media (max-width: 1540px) {
-    margin-top: -10px;
-    padding: 112px 149px;
-    width: 862px;
+    @media (max-width: 1540px) {
+      margin-top: -10px;
+      padding: 112px 149px;
+      width: 862px;
+    }
   }
-}
 
-.form__wrapper {
-  display: flex;
+  &__wrapper {
+    display: flex;
+  }
 
-  .form__price {
+  &__price {
     position: relative;
     margin-top: 50px;
     left: -67px;
@@ -38,86 +39,86 @@
       margin-top: 24px;
       left: -40px;
     }
+  }
 
-    .form__price-month {
-      font-size: 20px;
+  &__price-month {
+    font-size: 20px;
 
-      @media (max-width: 1540px) {
-        font-size: 16px;
-      }
-    }
-
-    .form__price-unit {
-      margin-right: 2px;
-      color: #ff1f1f;
-      font-size: 90px;
-      font-weight: 600;
-      line-height: 90px;
-      opacity: 1;
-
-      @media (max-width: 1540px) {
-        font-size: 67px;
-      }
-    }
-
-    .form__price-description {
-      margin: 19px auto 0;
-      text-align: center;
-      width: 245px;
-      line-height: 140%;
-
-      @media (max-width: 1540px) {
-        margin-top: 4px;
-        width: 200px;
-        font-size: 16px;
-      }
+    @media (max-width: 1540px) {
+      font-size: 16px;
     }
   }
 
-  .form__benefits {
+  &__price-unit {
+    margin-right: 2px;
+    color: #ff1f1f;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 90px;
+    opacity: 1;
+
+    @media (max-width: 1540px) {
+      font-size: 67px;
+    }
+  }
+
+  &__price-description {
+    margin: 19px auto 0;
+    text-align: center;
+    width: 245px;
+    line-height: 140%;
+
+    @media (max-width: 1540px) {
+      margin-top: 4px;
+      width: 200px;
+      font-size: 16px;
+    }
+  }
+
+  &__benefits {
     flex: 1;
     margin-top: -6px;
-
-    .form__benefit {
-      margin-left: -4px;
-      margin-bottom: 20px;
-      color: #fff;
-      font-size: 26px;
-      font-weight: 400;
-
-      @media (max-width: 1540px) {
-        margin-bottom: 15px;
-        font-size: 20px;
-      }
-    }
-
-    .form__benefit::before {
-      content: url('./../assets/icons/form/check-mark.svg');
-      position: relative;
-      top: 6px;
-      margin-right: 20px;
-
-      @media (max-width: 1540px) {
-        content: url('./../assets/icons/form/check-mark-1440.svg');
-      }
-    }
-  }
-}
-
-form {
-  display: flex;
-  margin-top: 30px;
-  height: 69px;
-  box-sizing: border-box;
-  width: 728px;
-
-  @media (max-width: 1540px) {
-    margin-top: 25px;
-    width: 572px;
-    height: 55px;
   }
 
-  .form__input {
+  &__benefit {
+    margin-left: -4px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+
+    @media (max-width: 1540px) {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+  }
+
+  &__benefit::before {
+    content: url('./../assets/icons/form/check-mark.svg');
+    position: relative;
+    top: 6px;
+    margin-right: 20px;
+
+    @media (max-width: 1540px) {
+      content: url('./../assets/icons/form/check-mark-1440.svg');
+    }
+  }
+
+  &__subscription {
+    display: flex;
+    margin-top: 30px;
+    height: 69px;
+    box-sizing: border-box;
+    width: 728px;
+
+    @media (max-width: 1540px) {
+      margin-top: 25px;
+      width: 572px;
+      height: 55px;
+    }
+  }
+
+  &__input {
     padding: 20px;
     flex: 1;
     height: 100%;
@@ -137,7 +138,7 @@ form {
     }
   }
 
-  .form__submit {
+  &__submit {
     display: flex;
     padding: 20px 50px;
     width: 328px;
