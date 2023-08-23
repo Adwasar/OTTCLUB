@@ -4,103 +4,145 @@
   box-sizing: border-box;
 
   @media (max-width: 1540px) {
-    padding-top: 0;
-  }
-}
-
-.tv-channels::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -335px;
-  width: 100%;
-  height: 1564px;
-  background-image: url('./../assets/img/backgrounds/web-1440.svg'),
-    url('./../assets/img/backgrounds/tv-channels-gradient.png');
-  background-position: left bottom 20px, left center;
-  background-size: 35%, contain;
-  background-repeat: no-repeat, no-repeat;
-  z-index: -1;
-
-  @media (max-width: 1540px) {
-    height: 1188px;
+    padding-top: 104px;
   }
 
-  @media (max-width: 1040px) {
-    top: -235px;
-    height: 1000px;
+  @media (max-width: 1140px) {
+    padding-top: 100px;
   }
 
-  @media (max-width: 818px) {
-    top: -185px;
-    height: 800px;
-    background-size: 50%, cover;
+  @media (max-width: 930px) {
+    padding-top: 88px;
   }
 
-  @media (max-width: 750px) {
-    top: -135px;
-    height: 700px;
+  @media (max-width: 690px) {
+    padding-top: 44px;
   }
 
   @media (max-width: 360px) {
-    top: -70px;
-    height: 500px;
-  }
-}
-
-.tv-channels__title {
-  margin-top: 11px;
-  margin-bottom: 19px;
-  color: #fff;
-  font-size: 52px;
-  font-weight: 500;
-  line-height: 140%;
-  opacity: 0.9;
-
-  @media (max-width: 1540px) {
-    margin-top: 68px;
-    margin-bottom: 15px;
-    font-size: 40px;
-  }
-}
-
-.tv-channels__title::after {
-  content: url('./../assets/icons/tv-channels/lightning.svg');
-  position: relative;
-  left: 17px;
-  top: -27px;
-
-  @media (max-width: 1540px) {
-    content: url('./../assets/icons/tv-channels/lightning-1440.svg');
-    left: 6px;
-    top: -10px;
-  }
-}
-
-.tv-channels__description {
-  margin: 0;
-  width: 840px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 150%;
-
-  @media (max-width: 1540px) {
-    width: 596px;
-    font-size: 16px;
-  }
-}
-
-.tv-channels__categories-list {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 51px;
-
-  @media (max-width: 1540px) {
-    margin-top: 32px;
+    padding-top: 51px;
   }
 
-  .tv-channels__category {
+  &__title {
+    position: relative;
+    margin-top: 11px;
+    margin-bottom: 19px;
+    color: #fff;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 140%;
+    opacity: 0.9;
+
+    @media (max-width: 1540px) {
+      margin-bottom: 15px;
+      font-size: 40px;
+    }
+
+    @media (max-width: 1140px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 930px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 690px) {
+      margin-top: 18px;
+      margin-bottom: 10px;
+      left: 21px;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 24px;
+    }
+
+    &::after {
+      content: url('./../assets/icons/tv-channels/lightning.svg');
+      position: relative;
+      left: 17px;
+      top: -27px;
+
+      @media (max-width: 1540px) {
+        content: url('./../assets/icons/tv-channels/lightning-1440.svg');
+        left: 6px;
+        top: -10px;
+      }
+
+      @media (max-width: 1140px) {
+        left: 13px;
+        top: -14px;
+      }
+
+      @media (max-width: 930px) {
+        left: 12px;
+        top: -19px;
+      }
+
+      @media (max-width: 690px) {
+        content: url('./../assets/icons/tv-channels/lightning-375.svg');
+        left: 3px;
+        top: -10px;
+      }
+
+      @media (max-width: 360px) {
+        left: 0px;
+        top: -9px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 0;
+    width: 840px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+
+    @media (max-width: 1540px) {
+      width: 596px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 1140px) {
+      margin-top: 19px;
+    }
+
+    @media (max-width: 930px) {
+      margin-top: 18px;
+      width: 550px;
+    }
+
+    @media (max-width: 690px) {
+      margin-top: 12px;
+      width: 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 360px) {
+      margin-top: 10px;
+      font-size: 15px;
+    }
+  }
+
+  &__categories-list {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    overflow: auto;
+
+    @media (max-width: 1540px) {
+      margin-top: 32px;
+    }
+
+    @media (max-width: 360px) {
+      margin-top: 24px;
+    }
+  }
+
+  &__category {
     display: flex;
     padding: 17px 24px;
     justify-content: center;
@@ -115,42 +157,127 @@
       padding: 13px 16px;
       font-size: 16px;
     }
+
+    @media (max-width: 1140px) {
+      margin-right: 22px;
+      padding: 13px 18px;
+    }
+
+    @media (max-width: 690px) {
+      margin-right: 15px;
+      padding: 9px 16px;
+    }
+
+    @media (max-width: 360px) {
+      margin-right: 6px;
+    }
   }
 
-  .tv-channels__category_active {
+  &__category_active {
     border: 2px solid #fc3232;
     background: #fc3232;
   }
-}
 
-.tv-channels__channels {
-  display: grid;
-  gap: 48px 66px;
-  grid-template-columns: repeat(5, 1fr);
-  margin-top: 50px;
+  &__channels {
+    display: grid;
+    gap: 48px 66px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+    overflow: auto;
 
-  @media (max-width: 1540px) {
-    margin-top: 40px;
-    gap: 32px 48px;
-  }
-}
+    @media (max-width: 1540px) {
+      margin-top: 40px;
+      gap: 32px 48px;
+    }
 
-.tv-channels__show-all {
-  margin: 7px 0 0 auto;
-  width: 175px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 140%;
-  cursor: pointer;
+    @media (max-width: 1140px) {
+      margin-top: 40px;
+      gap: 32px 24px;
+    }
 
-  @media (max-width: 1540px) {
-    margin: 2px -38px 0 auto;
-    font-size: 14px;
+    @media (max-width: 730px) {
+      margin-top: 23px;
+      gap: 14px 16px;
+    }
   }
 
-  img {
-    position: relative;
-    top: 10px;
-    margin-left: -1px;
+  &__show-all {
+    margin: 7px 0 0 auto;
+    width: 175px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    cursor: pointer;
+
+    @media (max-width: 1540px) {
+      margin: 2px -38px 0 auto;
+      font-size: 14px;
+    }
+
+    @media (max-width: 1140px) {
+      margin: 9px -38px 0 auto;
+      font-size: 14px;
+    }
+
+    @media (max-width: 930px) {
+      margin: 13px -38px 0 auto;
+      font-size: 14px;
+    }
+
+    @media (max-width: 690px) {
+      margin: 8px -38px 0 auto;
+      font-size: 14px;
+    }
+
+    @media (max-width: 360px) {
+      margin: 2px -38px 0 auto;
+      font-size: 14px;
+    }
+
+    img {
+      position: relative;
+      top: 10px;
+      margin-left: -1px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -335px;
+    width: 100%;
+    height: 1564px;
+    background-image: url('./../assets/img/backgrounds/web-1440.svg'),
+      url('./../assets/img/backgrounds/tv-channels-gradient.png');
+    background-position: left bottom 20px, left center;
+    background-size: 35%, contain;
+    background-repeat: no-repeat, no-repeat;
+    z-index: -1;
+
+    @media (max-width: 1540px) {
+      height: 1188px;
+    }
+
+    @media (max-width: 1040px) {
+      top: -235px;
+      height: 1000px;
+    }
+
+    @media (max-width: 818px) {
+      top: -185px;
+      height: 800px;
+      background-size: 50%, cover;
+    }
+
+    @media (max-width: 750px) {
+      top: -135px;
+      height: 700px;
+    }
+
+    @media (max-width: 360px) {
+      top: -70px;
+      height: 500px;
+    }
   }
 }

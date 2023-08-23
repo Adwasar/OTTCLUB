@@ -12,9 +12,41 @@
     padding: 23px;
   }
 
-  img {
+  @media (max-width: 1140px) {
+    padding: 21px;
+  }
+
+  @media (max-width: 930px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 730px) {
+    padding: 14px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 11px;
+  }
+
+  &__logo {
     @media (max-width: 1540px) {
       width: 132px;
+    }
+
+    @media (max-width: 1140px) {
+      width: 116px;
+    }
+
+    @media (max-width: 930px) {
+      width: 112px;
+    }
+
+    @media (max-width: 730px) {
+      width: 74px;
+    }
+
+    @media (max-width: 360px) {
+      width: 61px;
     }
   }
 }
