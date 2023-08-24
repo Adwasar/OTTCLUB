@@ -112,6 +112,8 @@
     margin-bottom: 32px;
     min-height: 106px;
     width: 100%;
+    min-height: 77px;
+    padding-bottom: 18px;
     border-bottom: 2px solid rgba($color: #fff, $alpha: 0.1);
 
     @media (max-width: 1540px) {
@@ -127,7 +129,6 @@
 
   &__question {
     display: flex;
-    padding-bottom: 18px;
     justify-content: space-between;
     align-items: start;
     cursor: pointer;
