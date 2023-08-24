@@ -1,5 +1,4 @@
 .devices {
-  height: 806px;
   padding-top: 156px;
 
   @media (max-width: 1540px) {
@@ -117,7 +116,7 @@
     }
 
     @media (max-width: 1140px) {
-      margin: -50px 0 0 -158px;
+      margin: -50px 0 0 -50px;
     }
 
     @media (max-width: 930px) {
@@ -185,6 +184,10 @@
 
     @media (max-width: 1140px) {
       margin-top: 69px;
+    }
+
+    @media (max-width: 960px) {
+      margin-top: 46px;
     }
 
     @media (max-width: 730px) {

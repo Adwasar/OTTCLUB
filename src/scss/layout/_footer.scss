@@ -1,10 +1,5 @@
 .footer {
   position: relative;
-  height: 564px;
-
-  @media (max-width: 1540px) {
-    height: auto;
-  }
 }
 
 .footer::before {
@@ -40,7 +35,8 @@
 }
 
 .footer__container {
-  padding-top: 88px;
+  padding-top: 116px;
+  padding-bottom: 20spx;
   border-top: 2px solid rgba($color: #fff, $alpha: 0.1);
 
   @media (max-width: 1540px) {
